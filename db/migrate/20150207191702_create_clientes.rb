@@ -7,7 +7,7 @@ class CreateClientes < ActiveRecord::Migration
       t.string :documento
       t.string :telefone
       
-      t.index :documento , unique: true
+      t.index :documento, unique: true
 
       t.timestamps
     end
