@@ -2,50 +2,28 @@
 <p>
 	<%= f.label :razaosocial %>
 	<%= f.text_field :razaosocial %>
-	<% if @cliente.errors.has_key? :razaosocial %>
-	<div class="error_message">
-		<%= @cliente.errors[:razaosocial].first %>
-	</div>
-	<% end %>
+	<%= error_tag @cliente, :razaosocial %>
 </p>
 
 <div class="field">
 	<%= f.label :nomefantasia %>
 	<%= f.text_field :nomefantasia %>
-	<!-- Fazer um Helper para limpar esse lixo de if para renderizar o erro -->
-	<% if @cliente.errors.has_key? :nomefantasia %>
-	<div class="error_message">
-		<%= @cliente.errors[:nomefantasia].first %>
-	</div>
-	<% end %>
+	<%= error_tag @cliente, :nomefantasia %>
 </div>
 <div class="field">
 	<%= f.label :tipo %>
 	<%= f.text_field :tipo %>
-	<% if @cliente.errors.has_key? :tipo %>
-	<div class="error_message">
-		<%= @cliente.errors[:tipo].first %>
-	</div>
-	<% end %>
+	<%= error_tag @cliente, :tipo %>
 </div>
 <div class="field">
 	<%= f.label :documento %>
 	<%= f.text_field :documento %>
-	<% if @cliente.errors.has_key? :documento %>
-	<div class="error_message">
-		<%= @cliente.errors[:documento].first %>
-	</div>
-	<% end %>
+	<%= error_tag @cliente, :documento %>
 </div>
 <div class="field">
 	<%= f.label :telefone %>
-
 	<%= f.text_field :telefone %>
-	<% if @cliente.errors.has_key? :telefone %>
-	<div class="error_message">
-		<%= @cliente.errors[:telefone].first %>
-	</div>
-	<% end %>
+	<%= error_tag @cliente, :telefone %>
 </div>
 <div class="actions">
 	<%= f.submit %>
