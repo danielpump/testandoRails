@@ -1,37 +1,53 @@
 <%= form_for(@cliente) do |f| %>
-  <% if @cliente.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+<p>
+	<%= f.label :razaosocial %>
+	<%= f.text_field :razaosocial %>
+	<% if @cliente.errors.has_key? :razaosocial %>
+	<div class="error_message">
+		<%= @cliente.errors[:razaosocial].first %>
+	</div>
+	<% end %>
+</p>
 
-      <ul>
-      <% @cliente.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="field">
+	<%= f.label :nomefantasia %>
+	<%= f.text_field :nomefantasia %>
+	<!-- Fazer um Helper para limpar esse lixo de if para renderizar o erro -->
+	<% if @cliente.errors.has_key? :nomefantasia %>
+	<div class="error_message">
+		<%= @cliente.errors[:nomefantasia].first %>
+	</div>
+	<% end %>
+</div>
+<div class="field">
+	<%= f.label :tipo %>
+	<%= f.text_field :tipo %>
+	<% if @cliente.errors.has_key? :tipo %>
+	<div class="error_message">
+		<%= @cliente.errors[:tipo].first %>
+	</div>
+	<% end %>
+</div>
+<div class="field">
+	<%= f.label :documento %>
+	<%= f.text_field :documento %>
+	<% if @cliente.errors.has_key? :documento %>
+	<div class="error_message">
+		<%= @cliente.errors[:documento].first %>
+	</div>
+	<% end %>
+</div>
+<div class="field">
+	<%= f.label :telefone %>
 
-  <div class="field">
-    <%= f.label :razaosocial %><br>
-    <%= f.text_field :razaosocial %>
-  </div>
-  <div class="field">
-    <%= f.label :nomefantasia %><br>
-    <%= f.text_field :nomefantasia %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo %><br>
-    <%= f.text_field :tipo %>
-  </div>
-  <div class="field">
-    <%= f.label :documento %><br>
-    <%= f.text_field :documento %>
-  </div>
-  <div class="field">
-    <%= f.label :telefone %><br>
-    <%= f.text_field :telefone %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+	<%= f.text_field :telefone %>
+	<% if @cliente.errors.has_key? :telefone %>
+	<div class="error_message">
+		<%= @cliente.errors[:telefone].first %>
+	</div>
+	<% end %>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
 <% end %>
