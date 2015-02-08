@@ -1,27 +1,26 @@
-<p>
-  <strong>Razaosocial:</strong>
-  <%= @cliente.razaosocial %>
-</p>
+<h1><%= t '.perfil', nome: @cliente.razaosocial %> </h1>
 
-<p>
-  <strong>Nomefantasia:</strong>
-  <%= @cliente.nomefantasia %>
-</p>
+<ul>
+	<li>
+		<%= t '.razaosocial', razaosocial: @cliente.razaosocial %>
+	</li>
+	<li>
+		<%= t '.nomefantasia', nomefantasia: @cliente.nomefantasia %>
+	</li>
+	<li>
+		<%= t '.tipo', tipo: @cliente.tipo %>
+	</li>
+	<li>
+		<% if @cliente.nomefantasia == 'PF' %>
+			<%= t '.documentocpf', cpf: @cliente.documento %>
+		<%else%>	
+			<%= t '.documentocnpj', cnpj: @cliente.documento %>
+		<%end%>
+	</li>
+	<li>
+		<%= t '.telefone', telefone: @cliente.telefone %>
+	</li>
+</ul>
 
-<p>
-  <strong>Tipo:</strong>
-  <%= @cliente.tipo %>
-</p>
-
-<p>
-  <strong>Documento:</strong>
-  <%= @cliente.documento %>
-</p>
-
-<p>
-  <strong>Telefone:</strong>
-  <%= @cliente.telefone %>
-</p>
-
-<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
-<%= link_to 'Back', clientes_path %>
+<%= link_to t('.editar'), edit_cliente_path(@cliente) %> |
+<%= link_to t('links.voltar'), clientes_path %>

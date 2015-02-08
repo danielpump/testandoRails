@@ -1,0 +1,28 @@
+pt-BR:
+  clientes:
+    new:
+      title: Cadastro
+    edit:
+      title: Cadastro
+    show:
+      perfil: "Perfil de informações de %{nome}"
+      razaosocial: "Razão social: %{razaosocial}"
+      nomefantasia: "Nome fantasia: %{nomefantasia}"
+      tipo: "Pessoa do tipo: %{tipo}" 
+      documentocpf: "CPF: %{cpf}"
+      documentocnpj: "CNPJ: %{cnpj}"
+      telefone: "Telefone: %{telefone}"    
+      editar: Editar cliente
+    voltar: Voltar       
+  activerecord:
+    models:
+      cliente: Cliente
+    attributes:
+      cliente:
+        razaosocial: Razão social
+        nomefantasia: Nome fantasia
+        tipo: Tipo de pessoa
+        documento: Número do documento
+        telefone: Telefone principal
+  links:
+    back: Voltar      
