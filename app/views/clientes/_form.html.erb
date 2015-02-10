@@ -1,32 +1,13 @@
+<div class="well bs-component" >
+	<%= form_for(@cliente) do |f| %>
 
-<%= form_for(@cliente) do |f| %>
-<p>
-	<%= f.label :razaosocial %>
-	<%= f.text_field :razaosocial %>
-	<%= error_tag @cliente, :razaosocial %>
-</p>
+	<%= form_text_input_field @cliente, :razaosocial %>
+	<%= form_text_input_field @cliente, :nomefantasia %>
+	<%= form_text_input_field @cliente, :tipo %>
+	<%= form_text_input_field @cliente, :documento %>
+	<%= form_text_input_field @cliente, :telefone %>
 
-<div class="field">
-	<%= f.label :nomefantasia %>
-	<%= f.text_field :nomefantasia %>
-	<%= error_tag @cliente, :nomefantasia %>
+	<%= form_submit_button %>
+
+	<% end %>
 </div>
-<div class="field">
-	<%= f.label :tipo %>
-	<%= f.text_field :tipo %>
-	<%= error_tag @cliente, :tipo %>
-</div>
-<div class="field">
-	<%= f.label :documento %>
-	<%= f.text_field :documento %>
-	<%= error_tag @cliente, :documento %>
-</div>
-<div class="field">
-	<%= f.label :telefone %>
-	<%= f.text_field :telefone %>
-	<%= error_tag @cliente, :telefone %>
-</div>
-<div class="actions">
-	<%= f.submit %>
-</div>
-<% end %>
