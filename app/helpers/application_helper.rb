@@ -8,7 +8,7 @@ module ApplicationHelper
   def form_text_input_field(model, attribute)
     content_tag(:div, :class => "form-group") do
       label_tag(attribute, nil, :class => "col-lg-2 control-label") <<
-      text_field_tag(attribute, nil, :class => "form-control") <<
+      text_field_tag((model.class.name.downcase << "[" << attribute.to_s << "]"), nil, :class => "form-control") <<
       error_tag(model, attribute)
     end
   end
