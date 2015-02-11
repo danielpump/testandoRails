@@ -5,18 +5,17 @@ module ApplicationHelper
     end
   end
 
-  def form_text_input_field(model, attribute)
+  def form_text_input_field(form, model, attribute)
     content_tag(:div, :class => "form-group") do
-      label_tag(attribute, nil, :class => "col-lg-2 control-label") <<
-      text_field_tag((model.class.name.downcase << "[" << attribute.to_s << "]"), nil, :class => "form-control") <<
-      error_tag(model, attribute)
+      (form.label attribute, :class => "col-lg-full control-label") <<        
+      (form.text_field attribute, :class => "form-control") <<  
+      (error_tag(model, attribute))
     end
   end
   
-  def form_submit_button()
+  def form_submit_button(form)
     content_tag(:div, :class => "form-group") do
-      #Ver como recuperar o nome da tela no botão
-      submit_tag(nil,:class => "btn btn-primary")
+      (form.submit :class => "btn btn-default")
     end
   end
     

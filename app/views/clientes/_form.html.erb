@@ -1,13 +1,13 @@
 <div class="well bs-component form" >
 	<%= form_for(@cliente) do |f| %>
-
-	<%= form_text_input_field @cliente, :razaosocial %>
-	<%= form_text_input_field @cliente, :nomefantasia %>
-	<%= form_text_input_field @cliente, :tipo %>
-	<%= form_text_input_field @cliente, :documento %>
-	<%= form_text_input_field @cliente, :telefone %>
+		
+	<%= form_text_input_field f, @cliente, :razaosocial %>
+	<%= form_text_input_field f, @cliente, :nomefantasia %>
+	<%= form_text_input_field f, @cliente, :tipo %>
+	<%= form_text_input_field f, @cliente, :documento %>
+	<%= form_text_input_field f, @cliente, :telefone %>
 	
-	<%= f.submit %>
+	<%= form_submit_button f %>
 
 	<% end %>
 </div>

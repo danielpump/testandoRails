@@ -4925,3 +4925,1039 @@ Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:40:41 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:40:41 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:43:49 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (25.8ms)
+  Rendered clientes/new.html.erb within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 
+    4: 	<%= form_text_input_field @cliente, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia %>
+    6: 	<%= form_text_input_field @cliente, :tipo %>
+    7: 	<%= form_text_input_field @cliente, :documento %>
+  app/helpers/application_helper.rb:12:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:44:21 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (30.6ms)
+  Rendered clientes/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 445ms (Views: 427.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:44:22 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:49:22 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (33.8ms)
+  Rendered clientes/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 449ms (Views: 423.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:23 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:49:36 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (33.3ms)
+  Rendered clientes/new.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 446ms (Views: 427.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:37 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:49:54 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (39.8ms)
+  Rendered clientes/new.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 454ms (Views: 436.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:49:55 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:50:28 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (34.1ms)
+  Rendered clientes/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 441ms (Views: 416.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:50:29 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:50:56 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (31.7ms)
+  Rendered clientes/new.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 
+    4: 	<%= form_text_input_field @cliente, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia %>
+    6: 	<%= form_text_input_field @cliente, :tipo %>
+    7: 	<%= form_text_input_field @cliente, :documento %>
+  app/helpers/application_helper.rb:11:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.7ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:51:54 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (26.4ms)
+  Rendered clientes/new.html.erb within layouts/application (30.5ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 
+    4: 	<%= form_text_input_field @cliente, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia %>
+    6: 	<%= form_text_input_field @cliente, :tipo %>
+    7: 	<%= form_text_input_field @cliente, :documento %>
+  app/helpers/application_helper.rb:11:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.6ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:52:11 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (45.4ms)
+  Rendered clientes/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 469ms (Views: 445.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:52:12 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:53:18 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (34.3ms)
+  Rendered clientes/new.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 452ms (Views: 433.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:53:19 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:53:50 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (26.5ms)
+  Rendered clientes/new.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 62ms
+
+SyntaxError ((erb):1: syntax error, unexpected ')', expecting end-of-input
+...ol-lg-2 control-label') ).to_s); _erbout.force_encoding(__EN...
+...                               ^):
+  app/helpers/application_helper.rb:10:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299635201900'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.5ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:54:11 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (13.1ms)
+  Rendered clientes/new.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 29ms
+
+SyntaxError ((erb):1: syntax error, unexpected ')', expecting end-of-input
+...ol-lg-2 control-label') ).to_s); _erbout.force_encoding(__EN...
+...                               ^):
+  app/helpers/application_helper.rb:10:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:5:in `block in _app_views_clientes__form_html_erb___538116324165076218_28046520'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_28046520'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.1ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:54:27 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (12.2ms)
+  Rendered clientes/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 30ms
+
+SyntaxError ((erb):1: syntax error, unexpected ')', expecting end-of-input
+...ol-lg-2 control-label') ).to_s); _erbout.force_encoding(__EN...
+...                               ^):
+  app/helpers/application_helper.rb:10:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:6:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299632173800'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299632173800'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.5ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:54:34 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (15.7ms)
+  Rendered clientes/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 453ms (Views: 446.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 00:54:34 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 00:54:34 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 00:54:35 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:54:54 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (28.4ms)
+  Rendered clientes/new.html.erb within layouts/application (32.6ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined local variable or method `f' for main:Object):
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 
+    4: 	
+    5: 	<%= form_text_input_field @cliente, :razaosocial %>
+    6: 	<%= form_text_input_field @cliente, :nomefantasia %>
+    7: 	<%= form_text_input_field @cliente, :tipo %>
+    8: 	<%= form_text_input_field @cliente, :documento %>
+  app/helpers/application_helper.rb:10:in `block in form_text_input_field'
+  app/helpers/application_helper.rb:9:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:5:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299627989940'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299627989940'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.8ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:58:45 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (28.8ms)
+  Rendered clientes/new.html.erb within layouts/application (32.2ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, :razaosocial, t %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___538116324165076218_70299628199640'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___538116324165076218_70299628199640'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3017389327676898117_70299629308660'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:59:17 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (41.6ms)
+  Rendered clientes/new.html.erb within layouts/application (159.6ms)
+Completed 500 Internal Server Error in 198ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, :razaosocial, t %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331285216500'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331285216500'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.9ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:59:41 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (8.2ms)
+  Rendered clientes/new.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, t, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.5ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 00:59:58 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (33.2ms)
+  Rendered clientes/new.html.erb within layouts/application (37.4ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, t, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.2ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:00:01 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (5.4ms)
+  Rendered clientes/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: <div class="well bs-component form" >
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, t, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+  app/views/clientes/_form.html.erb:4:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331283242040'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.8ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:00:07 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (12.7ms)
+  Rendered clientes/new.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field @cliente, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia, t %>
+    6: 	<%= form_text_input_field @cliente, :tipo, t %>
+    7: 	<%= form_text_input_field @cliente, :documento, t %>
+    8: 	<%= form_text_input_field @cliente, :telefone, t %>
+  app/views/clientes/_form.html.erb:5:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331283288920'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331283288920'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:00:18 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (20.6ms)
+  Rendered clientes/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 682ms (Views: 675.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:00:19 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:05:33 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (39.7ms)
+  Rendered clientes/new.html.erb within layouts/application (43.2ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 3)):
+    2: 	<%= form_for(@cliente) do |f| %>
+    3: 	
+    4: 	<%= form_text_input_field f, @cliente, :razaosocial %>
+    5: 	<%= form_text_input_field @cliente, :nomefantasia %>
+    6: 	<%= form_text_input_field @cliente, :tipo %>
+    7: 	<%= form_text_input_field @cliente, :documento %>
+    8: 	<%= form_text_input_field @cliente, :telefone %>
+  app/helpers/application_helper.rb:8:in `form_text_input_field'
+  app/views/clientes/_form.html.erb:5:in `block in _app_views_clientes__form_html_erb___489689773223484140_70331272184760'
+  app/views/clientes/_form.html.erb:2:in `_app_views_clientes__form_html_erb___489689773223484140_70331272184760'
+  app/views/clientes/new.html.erb:3:in `_app_views_clientes_new_html_erb___3856393315670049630_70331271453380'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.1ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:05:45 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (41.0ms)
+  Rendered clientes/new.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 440ms (Views: 433.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:05:46 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:07:28 -0200
+
+SyntaxError (/home/daniel/Projetos/Ruby/workspace/emissordenotas/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      form.text_field attribute, :class => "form-control" <<
+                               ^
+/home/daniel/Projetos/Ruby/workspace/emissordenotas/app/helpers/application_helper.rb:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+      form.text_field attribute, :class => "form-control" <<
+                                          ^):
+  app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/helpers/application_helper.rb:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/clientes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.9ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:10:30 -0200
+
+SyntaxError (/home/daniel/Projetos/Ruby/workspace/emissordenotas/app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      form.text_field attribute, :class => "form-control" <<
+                               ^
+/home/daniel/Projetos/Ruby/workspace/emissordenotas/app/helpers/application_helper.rb:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+      form.text_field attribute, :class => "form-control" <<
+                                          ^):
+  app/helpers/application_helper.rb:11: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/helpers/application_helper.rb:11: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/clientes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.9ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:10:52 -0200
+
+SyntaxError (/home/daniel/Projetos/Ruby/workspace/emissordenotas/app/helpers/application_helper.rb:11: syntax error, unexpected tSYMBEG, expecting keyword_end
+      form.text_field :razaosocial, :class => "form-control" <<
+                       ^):
+  app/helpers/application_helper.rb:11: syntax error, unexpected tSYMBEG, expecting keyword_end
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/clientes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.2ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:11:30 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (57.9ms)
+  Rendered clientes/new.html.erb within layouts/application (62.4ms)
+Completed 200 OK in 520ms (Views: 493.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:11:31 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:11:59 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (61.8ms)
+  Rendered clientes/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 501ms (Views: 481.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:00 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:12:38 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (62.1ms)
+  Rendered clientes/new.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 472ms (Views: 448.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:12:39 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:52 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:52 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:12:52 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:14:07 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (69.4ms)
+  Rendered clientes/new.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 615ms (Views: 595.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:08 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:14:11 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (42.7ms)
+  Rendered clientes/new.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 470ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:11 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:11 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:11 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:11 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:12 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:12 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:14:12 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:14 -0200
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:14 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:14 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:14:14 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:15:17 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (65.2ms)
+  Rendered clientes/new.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 592ms (Views: 555.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:15:18 -0200
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-02-11 01:16:49 -0200
+Processing by ClientesController#new as HTML
+  Rendered clientes/_form.html.erb (52.2ms)
+  Rendered clientes/new.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 459ms (Views: 438.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:50 -0200
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-02-11 01:16:51 -0200
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bExpvBJiqHHQlCUg5YjtWz2g6HRZHTviRNG8vruFm9k=", "cliente"=>{"razaosocial"=>"", "nomefantasia"=>"", "tipo"=>"", "documento"=>"", "telefone"=>""}, "commit"=>"Criar Cliente"}
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mCliente Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "clientes"  WHERE "clientes"."documento" = '' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  Rendered clientes/_form.html.erb (37.6ms)
+  Rendered clientes/new.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 520ms (Views: 442.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrat_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/translation_missing.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/system_simplex.css?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 01:16:52 -0200
