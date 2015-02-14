@@ -2,11 +2,10 @@ pt-BR:
   clientes:
     index:
       razaosocial: Razão social
-      nomefantasia: "Nome fantasia: %{nomefantasia}"
-      tipo: "Pessoa do tipo: %{tipo}" 
-      documentocpf: "CPF: %{cpf}"
-      documentocnpj: "CNPJ: %{cnpj}"
-      telefone: "Telefone: %{telefone}"
+      nomefantasia: "Nome fantasia"
+      tipo: "Pessoa do tipo" 
+      documento: Nº Documento
+      telefone: "Telefone"
     new:
       title: Cadastro
     edit:
