@@ -1,9 +1,11 @@
 <h1>Listing clientes</h1>
 
+<%= data_table(@clientes, [:razaosocial]) %>
+
 <table>
   <thead>
     <tr>
-      <th>Razaosocial</th>
+      <th><%= t '.razaosocial' %></th>
       <th>Nomefantasia</th>
       <th>Tipo</th>
       <th>Documento</th>
