@@ -30,12 +30,12 @@ module ComponentsHelper
         end
      end) <<
      (content_tag :tbody do
-        models.collect { |model|
-          concat content_tag :tr do
-            attributes.collect { |attribute|
-             content_tag(:td, model[attribute])
-            }.to_s.html_safe  
-          end         
+        var = models.collect { |model|           
+          concat (content_tag :tr do
+             attributes.collect { |attribute|
+               concat content_tag :td, (model[attribute])
+             }
+          end)
         }.to_s.html_safe
      end)
    end
