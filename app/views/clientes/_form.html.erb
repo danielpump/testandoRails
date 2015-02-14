@@ -7,7 +7,10 @@
 	<%= form_text_input_field f, @cliente, :documento %>
 	<%= form_text_input_field f, @cliente, :telefone %>
 	
-	<%= form_submit_button f %>
-
+	<div class="form-buttons">
+		<%= back_button 'links.voltar', back_path %>
+		<%= form_submit_button f %>
+	</div>	
+	
 	<% end %>
 </div>

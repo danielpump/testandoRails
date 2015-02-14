@@ -8,3 +8,7 @@
 col-lg-full {
 	width: 100%
 }
+
+input.form-btn {
+	float: right;
+}
