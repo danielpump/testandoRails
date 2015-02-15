@@ -38,6 +38,3 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-#Gem to deploy heroku
-gem 'cowsay'
-
