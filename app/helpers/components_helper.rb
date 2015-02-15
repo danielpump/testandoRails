@@ -14,7 +14,7 @@ module ComponentsHelper
   end
 
   def form_submit_button(form)
-     (form.submit :class => "btn btn-default form-btn")
+    (form.submit :class => "btn btn-default form-btn")
   end
 
   def data_table(models, attributes = [])
@@ -28,23 +28,33 @@ module ComponentsHelper
         end
       end) <<
       (content_tag :tbody do
-        var = models.collect { |model|
+        models.collect { |model|
           concat (content_tag :tr do
-             attributes.collect { |attribute|
+             line = attributes.collect { |attribute|
                concat content_tag :td, (model[attribute])
              }
+             line[0] << (content_tag :td, ((show_button(model) << (edit_button(model)))))
+             line
           end)
         }.to_s.html_safe
       end)
     end
   end
 
-  def link_button(label, path)    
-      (link_to (t ".#{label}"), path, :class => "btn btn-info")    
+  def link_button(label, path)
+    (link_to (t ".#{label}"), path, :class => "btn btn-info")
   end
-  
-  def back_button(label, path)    
-      (link_to (t "#{label}"), path, :class => "btn btn-primary")    
+
+  def back_button(label, path)
+    (link_to (t "#{label}"), path, :class => "btn btn-primary")
+  end
+
+  def show_button(path, label = 'links.mostrar')
+    (link_to (t "#{label}"), path, :class => "btn btn-info")
+  end
+
+  def edit_button(model, label = 'links.editar')
+    (link_to (t "#{label}"), ("edit_#{model}_path"), :class => "btn btn-warning")
   end
 
 end

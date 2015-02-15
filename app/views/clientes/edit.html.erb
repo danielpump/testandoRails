@@ -1,6 +1,5 @@
-<h1><%= t '.title'%></h1>
 
-<%= render 'form' %>
+<%= render partial: 'form', locals: {back_path: clientes_path, title: (t '.title')} %>
 
 <%= link_to 'Show', @cliente %> |
-<%= link_to 'Back', clientes_path %>
+

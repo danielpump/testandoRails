@@ -33,4 +33,6 @@ pt-BR:
         documento: Número do documento
         telefone: Telefone principal
   links:
-    voltar: Voltar      
+    voltar: Voltar 
+    mostrar: Mostrar
+    editar: Editar     
