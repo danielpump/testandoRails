@@ -54,7 +54,7 @@ module ComponentsHelper
   end
 
   def edit_button(model, label = 'links.editar')
-    (link_to (t "#{label}"), ("edit_#{model}_path"), :class => "btn btn-warning")
+    (link_to (t "#{label}"), send(("edit_#{model.class.name.downcase}_path"), model), :class => "btn btn-warning")
   end
 
 end

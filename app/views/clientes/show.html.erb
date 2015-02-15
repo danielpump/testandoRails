@@ -1,26 +1,37 @@
-<h1><%= t '.perfil', nome: @cliente.razaosocial %> </h1>
+<div class="panel panel-success">
+	<div class="panel-heading">
+		<h2 class="panel-title show-title"><%= t '.perfil', nome: @cliente.razaosocial %></h2>
+	</div>
+	<div class="panel-body">
 
-<ul>
-	<li>
-		<%= t '.razaosocial', razaosocial: @cliente.razaosocial %>
-	</li>
-	<li>
-		<%= t '.nomefantasia', nomefantasia: @cliente.nomefantasia %>
-	</li>
-	<li>
-		<%= t '.tipo', tipo: @cliente.tipo %>
-	</li>
-	<li>
-		<% if @cliente.nomefantasia == 'PF' %>
-			<%= t '.documentocpf', cpf: @cliente.documento %>
-		<%else%>	
-			<%= t '.documentocnpj', cnpj: @cliente.documento %>
-		<%end%>
-	</li>
-	<li>
-		<%= t '.telefone', telefone: @cliente.telefone %>
-	</li>
-</ul>
+		<div class="row">
 
-<%= link_to t('.editar'), edit_cliente_path(@cliente) %> |
-<%= link_to t('links.voltar'), clientes_path %>
+			<span class="label label-default"><%= t '.razaosocial' %></span>
+			<%= @cliente.razaosocial %>
+
+		</div>
+		<div class="row">
+			<div class="cell">
+				<span class="label label-default"><%= t '.nomefantasia' %></span>
+				<%= @cliente.nomefantasia %>
+			</div>
+			<div class="cell">
+				<span class="label label-default"><%= t '.tipo'%></span>
+				<%= @cliente.tipo %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cell">
+				<span class="label label-default"><%= t '.documento'%></span>
+				<%= @cliente.documento %>
+			</div>
+			<div class="cell">
+				<span class="label label-default"><%= t '.telefone'%></span>
+				<%= @cliente.telefone %>
+			</div>
+		</div>
+
+		<%= link_to t('.editar'), edit_cliente_path(@cliente) %> |
+		<%= link_to t('links.voltar'), clientes_path %>
+	</div>
+</div>

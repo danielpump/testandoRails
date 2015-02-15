@@ -14,12 +14,11 @@ pt-BR:
       title: Cadastro
     show:
       perfil: "Perfil de informações de %{nome}"
-      razaosocial: "Razão social: %{razaosocial}"
-      nomefantasia: "Nome fantasia: %{nomefantasia}"
-      tipo: "Pessoa do tipo: %{tipo}" 
-      documentocpf: "CPF: %{cpf}"
-      documentocnpj: "CNPJ: %{cnpj}"
-      telefone: "Telefone: %{telefone}"    
+      razaosocial: Razão social 
+      nomefantasia: Nome fantasia 
+      tipo: Pessoa do tipo 
+      documento: Documento
+      telefone: Telefone    
       editar: Editar cliente
     voltar: Voltar       
   activerecord:

@@ -12,3 +12,20 @@ col-lg-full {
 input.form-btn {
 	float: right;
 }
+
+.show-title {
+	font-size: 20px;
+}
+
+.row {
+	width: 100%;
+	overflow: hidden;
+	#background: lime;
+}
+.cell {
+	width: 50%;
+	padding: 10px;
+	float: left;
+	#background: orange;
+}​
+
