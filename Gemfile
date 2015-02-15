@@ -43,3 +43,5 @@ gem 'spring',        group: :development
 #Gem to deploy heroku
 gem 'cowsay'
 
+gem 'puma'
+
