@@ -1,13 +1,13 @@
 pt-BR:
   clientes:
     index:
-      listadeclientes: Lista de clientes
       razaosocial: Razão social
       nomefantasia: "Nome fantasia"
       tipo: "Pessoa do tipo" 
       documento: Nº Documento
       telefone: "Telefone"
       novocliente: Novo cliente
+      perfil: "Listagem de clientes %{nome}"
     new:
       title: Cadastro
     edit:
@@ -34,4 +34,6 @@ pt-BR:
   links:
     voltar: Voltar 
     mostrar: Mostrar
-    editar: Editar     
+    editar: Editar   
+    apagar: Apagar  
+    confirmar_exclusao: Tem certeza que dseja exluir o registro?

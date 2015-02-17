@@ -1,37 +1,13 @@
 <div class="panel panel-success">
-	<div class="panel-heading">
-		<h2 class="panel-title show-title"><%= t '.perfil', nome: @cliente.razaosocial %></h2>
-	</div>
-	<div class="panel-body">
+	<%= show_header(@cliente.razaosocial) %>
+	<%= show_body do %>
 
-		<div class="row">
+	<%= show_full_row @cliente, :razaosocial %>
+	<%= show_two_column_row @cliente, :nomefantasia, @cliente, :tipo %>
+	<%= show_two_column_row @cliente, :documento, @cliente, :telefone %>
 
-			<span class="label label-default"><%= t '.razaosocial' %></span>
-			<%= @cliente.razaosocial %>
+	<%= (edit_button(@cliente)) %>
+	<%= back_button clientes_path %>
 
-		</div>
-		<div class="row">
-			<div class="cell">
-				<span class="label label-default"><%= t '.nomefantasia' %></span>
-				<%= @cliente.nomefantasia %>
-			</div>
-			<div class="cell">
-				<span class="label label-default"><%= t '.tipo'%></span>
-				<%= @cliente.tipo %>
-			</div>
-		</div>
-		<div class="row">
-			<div class="cell">
-				<span class="label label-default"><%= t '.documento'%></span>
-				<%= @cliente.documento %>
-			</div>
-			<div class="cell">
-				<span class="label label-default"><%= t '.telefone'%></span>
-				<%= @cliente.telefone %>
-			</div>
-		</div>
-
-		<%= link_to t('.editar'), edit_cliente_path(@cliente) %> |
-		<%= link_to t('links.voltar'), clientes_path %>
-	</div>
+	<% end %>
 </div>

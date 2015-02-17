@@ -22,9 +22,11 @@ module ComponentsHelper
     content_tag(:table, :class => "table table-striped table-hover") do
       (content_tag(:thead) do
         content_tag :tr do
-          attributes.collect { |attribute|
+          header = attributes.collect { |attribute|
             concat content_tag(:th, (t ".#{attribute}"))
-          }.to_s.html_safe
+          }
+          header[0] << (content_tag(:th, 'Ações'))
+          header.to_s.html_safe
         end
       end) <<
       (content_tag :tbody do
@@ -33,7 +35,7 @@ module ComponentsHelper
              line = attributes.collect { |attribute|
                concat content_tag :td, (model[attribute])
              }
-             line[0] << (content_tag :td, ((show_button(model) << (edit_button(model)))))
+             line[0] << (content_tag :td, ((show_button(model) << (edit_button(model))) << remove_button(model)))
              line
           end)
         }.to_s.html_safe
@@ -45,7 +47,7 @@ module ComponentsHelper
     (link_to (t ".#{label}"), path, :class => "btn btn-info")
   end
 
-  def back_button(label, path)
+  def back_button(label = 'links.voltar', path)
     (link_to (t "#{label}"), path, :class => "btn btn-primary")
   end
 
@@ -55,6 +57,52 @@ module ComponentsHelper
 
   def edit_button(model, label = 'links.editar')
     (link_to (t "#{label}"), send(("edit_#{model.class.name.downcase}_path"), model), :class => "btn btn-warning")
+  end
+
+  def remove_button(model, label = 'links.apagar')
+    (link_to (t "#{label}"), model, method: :delete, data: { confirm: "Tem certeza que dseja exluir o registro?" },  class: "btn btn-primary")
+  end
+
+  def show_header(header_message_nome_param)
+    content_tag(:div, :class => "panel-heading") do
+      content_tag(:h2, :class => "panel-title show-title") do
+        (t ".perfil", nome: header_message_nome_param)
+      end
+    end
+  end
+
+  def show_full_row(model, attribute)
+    content_tag(:div, :class => "row") do
+      content_tag(:div, :class => "full-cell") do
+        show_field(model, attribute)
+      end
+    end
+  end
+
+  def show_body()
+    content_tag(:div, :class => "panel-body") do
+      yield if block_given?
+    end
+  end
+
+  def show_two_column_row(model_row_one, attribute_row_one, model_row_two, attribute_row_two)
+    content_tag(:div, :class => "row") do
+      show_column_row(model_row_one, attribute_row_one) <<
+      show_column_row(model_row_two, attribute_row_two)
+    end
+  end
+
+  def show_column_row(model, attribute)
+    content_tag(:div, :class => "cell") do
+      show_field(model, attribute)
+    end
+  end
+
+  def show_field(model, attribute)
+    content_tag(:span, :class => "label label-default") do
+      (t ".#{attribute}")
+    end << " ".freeze <<
+    (model[attribute])
   end
 
 end
