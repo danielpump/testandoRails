@@ -1,18 +1,17 @@
 <div class="well bs-component form" >
 	<h1><%= title%></h1>
-	
 	<%= form_for(@cliente) do |f| %>
-		
+
 	<%= form_text_input_field f, @cliente, :razaosocial %>
 	<%= form_text_input_field f, @cliente, :nomefantasia %>
 	<%= form_text_input_field f, @cliente, :tipo %>
 	<%= form_text_input_field f, @cliente, :documento %>
 	<%= form_text_input_field f, @cliente, :telefone %>
-	
+
 	<div class="form-buttons">
 		<%= back_button back_path %>
 		<%= form_submit_button f %>
-	</div>	
-	
+	</div>
+
 	<% end %>
 </div>
