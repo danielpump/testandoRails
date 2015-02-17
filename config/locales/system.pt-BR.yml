@@ -37,3 +37,5 @@ pt-BR:
     editar: Editar   
     apagar: Apagar  
     confirmar_exclusao: Tem certeza que dseja exluir o registro?
+  notice:
+    success: "%{model} foi criado com sucesso."      
