@@ -1,5 +1,5 @@
-<h1><%= t '.listadeclientes'%></h1>
-
-<%= data_table(@clientes, [:razaosocial, :nomefantasia, :tipo, :documento, :telefone]) %>
-
+<div class="panel panel-success">
+	<%= show_header('') %>
+	<%= data_table(@clientes, [:razaosocial, :nomefantasia, :tipo, :documento, :telefone]) %>
+</div>
 <%= link_button '.novocliente', new_cliente_path %>

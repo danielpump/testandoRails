@@ -60,7 +60,7 @@ module ComponentsHelper
   end
 
   def remove_button(model, label = 'links.apagar')
-    (link_to (t "#{label}"), model, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-primary")
+    (link_to (t "#{label}"), model, method: :delete, data: { confirm: "Tem certeza que dseja exluir o registro?" },  class: "btn btn-primary")
   end
 
   def show_header(header_message_nome_param)
