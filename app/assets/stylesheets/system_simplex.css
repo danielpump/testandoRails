@@ -22,6 +22,12 @@ input.form-btn {
 	overflow: hidden;
 	#background: lime;
 }
+.full-cell {
+	width: 100%;
+	padding: 10px;
+	float: left;
+	#background: orange;
+}
 .cell {
 	width: 50%;
 	padding: 10px;

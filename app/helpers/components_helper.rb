@@ -45,7 +45,7 @@ module ComponentsHelper
     (link_to (t ".#{label}"), path, :class => "btn btn-info")
   end
 
-  def back_button(label, path)
+  def back_button(label = 'links.voltar', path)
     (link_to (t "#{label}"), path, :class => "btn btn-primary")
   end
 
@@ -55,6 +55,48 @@ module ComponentsHelper
 
   def edit_button(model, label = 'links.editar')
     (link_to (t "#{label}"), send(("edit_#{model.class.name.downcase}_path"), model), :class => "btn btn-warning")
+  end
+
+  def show_header(header_message_nome_param)
+    content_tag(:div, :class => "panel-heading") do
+      content_tag(:h2, :class => "panel-title show-title") do
+        (t ".perfil", nome: header_message_nome_param)
+      end
+    end
+  end
+
+  def show_full_row(model, attribute)
+    content_tag(:div, :class => "row") do
+      content_tag(:div, :class => "full-cell") do
+        show_field(model, attribute)
+      end
+    end
+  end
+
+  def show_body()
+    content_tag(:div, :class => "panel-body") do
+      yield if block_given?
+    end
+  end
+
+  def show_two_column_row(model_row_one, attribute_row_one, model_row_two, attribute_row_two)
+    content_tag(:div, :class => "row") do
+      show_column_row(model_row_one, attribute_row_one) <<
+      show_column_row(model_row_two, attribute_row_two)
+    end
+  end
+
+  def show_column_row(model, attribute)
+    content_tag(:div, :class => "cell") do
+      show_field(model, attribute)
+    end
+  end
+
+  def show_field(model, attribute)
+    content_tag(:span, :class => "label label-default") do
+      (t ".#{attribute}")
+    end << " ".freeze <<
+    (model[attribute])
   end
 
 end
