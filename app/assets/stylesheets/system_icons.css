@@ -71,3 +71,25 @@
 	margin: 0 6px 0 0;
 	border: 0px;
 }
+
+.list-button-icon {
+	content: "";
+	display: block;
+	background: url("icoMoon/0187-list.png") no-repeat;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 0 6px 0 0;
+	border: 0px;
+}
+
+.home-button-icon {
+	content: "";
+	display: block;
+	background: url("icoMoon/0001-home.png") no-repeat;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 0 6px 0 0;
+	border: 0px;
+}
