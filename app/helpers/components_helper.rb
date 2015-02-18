@@ -61,6 +61,12 @@ module ComponentsHelper
   def link_button(label, path)
     (link_to (t ".#{label}"), path, :class => "btn btn-info")
   end
+  
+  def icon_link_button(path, css_class)
+    (link_to path do
+      (content_tag :i, "",  :class => css_class)
+    end)
+  end
 
   def back_button(label = 'links.voltar', path)
     (link_to path do

@@ -38,58 +38,6 @@ span.error_message {
 	color: #B00100;
 }
 
-.edit-button-icon {
-	content: "";
-	display: block;
-	background: url("icoMoon/0006-pencil.png") no-repeat;
-	width: 32px;
-	height: 32px;
-	float: left;
-	margin: 0 6px 0 0;
-}
-
-.delete-button-icon {
-	content: "";
-	display: block;
-	background: url("icoMoon/0272-cross.png") no-repeat;
-	width: 32px;
-	height: 32px;
-	float: left;
-	margin: 0 6px 0 0;
-}
-
-.back-button-icon {
-	content: "";
-	display: block;
-	background: url("icoMoon/0104-undo2.png") no-repeat;
-	width: 32px;
-	height: 32px;
-	float: left;
-	margin: 0 6px 0 0;
-}
-
-.ok-button-icon {
-	content: "";
-	display: block;
-	background: url("icoMoon/0273-checkmark.png") no-repeat;
-	width: 32px;
-	height: 32px;
-	float: left;
-	margin: 0 6px 0 0;
-	border: 0px;
-}
-
-.logout-button-icon {
-	content: "";
-	display: block;
-	background: url("icoMoon/0183-switch.png") no-repeat;
-	width: 32px;
-	height: 32px;
-	float: left;
-	margin: 0 6px 0 0;
-	border: 0px;
-}
-
 .panel-index {
 	border-color: #075DB2;
 }

@@ -10,6 +10,7 @@
 	<body>
 		<header>
 
+			<!-- Menu de usuario do sistema -->
 			<nav class="navbar navbar-default navbar-close-each-other navbar-system">
 				<div class="container-fluid">
 					<ul class="nav navbar-nav navbar-right">
@@ -18,13 +19,14 @@
 						</li>
 						<li>
 							<%= link_to "/" do %>
-								<%(content_tag :i, "",  :class => "logout-button-icon")%>
+							<% (content_tag :i, "",  :class => "logout-button-icon")%>
 							<%end %>
 						</li>
 					</ul>
 				</div>
 			</nav>
 
+			<!-- Menu de navegação do sistema -->
 			<nav class="navbar navbar-default navbar-close-each-other">
 				<div class="container-fluid">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,6 +42,19 @@
 								</ul>
 
 							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Menu de ferramentas -->
+			<nav class="navbar navbar-default navbar-close-each-other">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+
+							 <%= render partial: 'tools' %>
+
 						</ul>
 					</div>
 				</div>
