@@ -23,7 +23,7 @@ module ComponentsHelper
   end
 
   def form_submit_button(form)
-    (form.submit :class => "btn btn-default form-btn")
+    (form.submit "", type: "image", class: "ok-button-icon form-btn")
   end
 
   def data_table(models, attributes = [])

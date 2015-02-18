@@ -67,3 +67,14 @@ span.error_message {
 	float: left;
 	margin: 0 6px 0 0;
 }
+
+.ok-button-icon {
+	content: "";
+	display: block;
+	background: url("icoMoon/0273-checkmark.png") no-repeat;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 0 6px 0 0;
+	border: 0px;
+}
