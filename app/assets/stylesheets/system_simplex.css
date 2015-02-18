@@ -79,11 +79,39 @@ span.error_message {
 	border: 0px;
 }
 
+.logout-button-icon {
+	content: "";
+	display: block;
+	background: url("icoMoon/0183-switch.png") no-repeat;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 0 6px 0 0;
+	border: 0px;
+}
+
 .panel-index {
-  border-color: #075DB2;
+	border-color: #075DB2;
 }
 .panel-index > .panel-heading {
-  color: #ffffff;
-  background-color: #075DB2;
-  border-color: #075DB2;
+	color: #ffffff;
+	background-color: #075DB2;
+	border-color: #075DB2;
+}
+
+nav.navbar-close-each-other {
+	margin-bottom: -1px;
+}
+
+nav.navbar-system {
+	background-color: #075DB2;
+}
+
+.navbar-menu {
+	margin-bottom: -1px;
+}
+
+.navbar-system > div > ul > li > a {
+	font-size: large;
+	color: white !important;
 }
