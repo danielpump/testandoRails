@@ -43,3 +43,29 @@ input.form-input-text-error {
 span.error_message {
 	color: #B00100;
 }
+
+.panel-index {
+	border-color: #075DB2;
+}
+.panel-index > .panel-heading {
+	color: #ffffff;
+	background-color: #075DB2;
+	border-color: #075DB2;
+}
+
+nav.navbar-close-each-other {
+	margin-bottom: -1px;
+}
+
+nav.navbar-system {
+	background-color: #075DB2;
+}
+
+.navbar-menu {
+	margin-bottom: -1px;
+}
+
+.navbar-system > div > ul > li > a {
+	font-size: large;
+	color: white !important;
+}

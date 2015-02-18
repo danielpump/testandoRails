@@ -1,4 +1,4 @@
-<div class="panel panel-success">
+<div class="panel panel-index">
 	<%= show_header(@cliente.razaosocial) %>
 	<%= show_body do %>
 
@@ -6,8 +6,8 @@
 	<%= show_two_column_row @cliente, :nomefantasia, @cliente, :tipo %>
 	<%= show_two_column_row @cliente, :documento, @cliente, :telefone %>
 
-	<%= (edit_button(@cliente)) %>
 	<%= back_button clientes_path %>
+	<%= (edit_button(@cliente)) %>
 
 	<% end %>
 </div>
