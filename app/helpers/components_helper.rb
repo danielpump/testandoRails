@@ -1,15 +1,24 @@
 module ComponentsHelper
   def error_tag(model, attribute)
     if model.errors.has_key? attribute
-      content_tag( :div, model.errors[attribute].first, class: 'error_message' )
+      content_tag( :span, model.errors[attribute].first, class: 'error_message' )
+    end
+  end
+
+  def attribute_has_error?(model, attribute)
+    (model.errors.has_key? attribute)
+  end
+
+  def form_input_error_class(model, attribute)
+    if attribute_has_error?(model, attribute)
+      "form-input-text-error"
     end
   end
 
   def form_text_input_field(form, model, attribute)
     content_tag(:div, :class => "form-group") do
-      (form.label attribute, :class => "col-lg-full control-label") <<
-      (form.text_field attribute, :class => "form-control") <<
-      (error_tag(model, attribute))
+      (form.label attribute, :class => "col-lg-full control-label") << error_tag(model, attribute) <<
+      (form.text_field attribute, :class => "form-control #{form_input_error_class(model, attribute)}")
     end
   end
 

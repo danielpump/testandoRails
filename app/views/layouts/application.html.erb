@@ -26,14 +26,16 @@
 		<div id="content">
 
 			<%if notice.present?%>
-			<p id="notice">
+			<div id="notice" class="alert alert-dismissible alert-success">
+				<button type="button" class="close" data-dismiss="alert">×</button>
 				<%= notice %>
-			</p>
+			</div>
 			<%end%>
 			<%if alert.present?%>
-			<p id="alert">
+			<div id="alert" class="alert alert-dismissible alert-warning">
+				<button type="button" class="close" data-dismiss="alert">×</button>
 				<%= alert %>
-			</p>
+			</div>
 			<%end%>
 
 			<%= yield %>
