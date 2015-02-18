@@ -11,14 +11,14 @@ module ComponentsHelper
 
   def form_input_error_class(model, attribute)
     if attribute_has_error?(model, attribute)
-      "form-input-text-error"
+      "has-error"
     end
   end
 
   def form_text_input_field(form, model, attribute)
-    content_tag(:div, :class => "form-group") do
-      (form.label attribute, :class => "col-lg-full control-label") << error_tag(model, attribute) <<
-      (form.text_field attribute, :class => "form-control #{form_input_error_class(model, attribute)}")
+    content_tag(:div, :class => "form-group  #{form_input_error_class(model, attribute)}") do
+      (form.label attribute, :class => "col-lg-full control-label") << 
+      (form.text_field attribute, :class => "form-control")
     end
   end
 
