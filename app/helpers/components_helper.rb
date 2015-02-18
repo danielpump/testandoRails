@@ -41,10 +41,16 @@ module ComponentsHelper
       (content_tag :tbody do
         models.collect { |model|
           concat (content_tag :tr do
+             count = 0
              line = attributes.collect { |attribute|
-               concat content_tag :td, (model[attribute])
+               count += count+1
+               if count == 1
+                 concat content_tag :td, ((show_button(model, (t model[attributes.first]))))
+               else
+                 concat content_tag :td, (model[attribute])
+               end
              }
-             line[0] << (content_tag :td, ((show_button(model) << (edit_button(model))) << remove_button(model)))
+             line[0] << (content_tag :td, (((edit_button(model)) << remove_button(model))))
              line
           end)
         }.to_s.html_safe
@@ -57,19 +63,25 @@ module ComponentsHelper
   end
 
   def back_button(label = 'links.voltar', path)
-    (link_to (t "#{label}"), path, :class => "btn btn-primary")
+    (link_to path do
+      (content_tag :i, "",  :class => "back-button-icon")
+    end)
   end
 
   def show_button(path, label = 'links.mostrar')
-    (link_to (t "#{label}"), path, :class => "btn btn-info")
+    (link_to label, path)
   end
 
   def edit_button(model, label = 'links.editar')
-    (link_to (t "#{label}"), send(("edit_#{model.class.name.downcase}_path"), model), :class => "btn btn-warning")
+    (link_to send(("edit_#{model.class.name.downcase}_path"), model) do
+      (content_tag :i, "",  :class => "edit-button-icon")
+    end)
   end
 
   def remove_button(model, label = 'links.apagar')
-    (link_to (t "#{label}"), model, method: :delete, data: { confirm: "Tem certeza que dseja exluir o registro?" },  class: "btn btn-primary")
+    (link_to model, method: :delete, data: { confirm: "Tem certeza que dseja exluir o registro?" } do
+      (content_tag :i, "",  :class => "delete-button-icon")
+    end)
   end
 
   def show_header(header_message_nome_param)
