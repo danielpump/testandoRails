@@ -75,6 +75,8 @@ nav.navbar-system {
 	font-size: large;
 	color: white !important;
 }
+<<<<<<< HEAD:app/assets/stylesheets/system_simplex.css.erb
+=======
 
 .navbar-menu-button {
 	background-color: rgb(118, 123, 110);
@@ -85,3 +87,4 @@ nav.navbar-system {
 .navbar-menu-button:hover{
 	background-color: yellow !important; 
 }
+>>>>>>> bitBucket/master:app/assets/stylesheets/system_simplex.css
