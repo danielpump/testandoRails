@@ -36,10 +36,6 @@ pt-BR:
     mostrar: Mostrar
     editar: Editar   
     apagar: Apagar  
-<<<<<<< HEAD
-    confirmar_exclusao: Tem certeza que dseja exluir o registro?
-=======
     confirmar_exclusao: Tem certeza que dseja exluir o registro?
   notice:
     success: "%{model} foi criado com sucesso."      
->>>>>>> 519e19ded5d4ab756764c9031c3617184c359ea7
