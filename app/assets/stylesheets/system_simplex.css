@@ -56,10 +56,26 @@ nav.navbar-system {
 }
 
 .navbar-menu {
-	margin-bottom: -1px;
+	background-color: rgba(157, 162, 174, 1);
+	border-color: rgba(128, 133, 144, 1);
+}
+
+.navbar-tools {
+	background-color: rgba(157, 162, 174, 1);
+	border-color: rgba(128, 133, 144, 1);
 }
 
 .navbar-system > div > ul > li > a {
 	font-size: large;
 	color: white !important;
+}
+
+.navbar-menu-button {
+	background-color: rgb(118, 123, 110);
+	color: rgb(249, 249, 255) !important; 
+	border-radius: 5px ;
+}
+
+.navbar-menu-button:hover{
+	background-color: yellow !important; 
 }
