@@ -62,7 +62,7 @@
 			<div id="top">
 
 				<!-- .navbar -->
-				<nav class="navbar navbar-inverse navbar-fixed-top">
+				<nav class="navbar navbar-inverse navbar-static-top">
 					<div class="container-fluid">
 
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -73,7 +73,9 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a href="index.html" class="navbar-brand"> <img src="assets/images/logo.png" alt=""> </a>
+							<%= link_to "/" do %>
+							<img width="50%" src="<%= asset_path("logo.png") %>"  />
+							<%end %>
 						</header>
 						<div class="topnav">
 							<div class="btn-group">
@@ -97,30 +99,10 @@
 							<!-- .nav -->
 							<ul class="nav navbar-nav">
 								<li>
-									<a href="dashboard.html">Dashboard</a>
-								</li>
-								<li>
-									<a href="table.html">Tables</a>
-								</li>
-								<li>
-									<a href="file.html">File Manager</a>
-								</li>
-								<li class='dropdown '>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Form Elements <b class="caret"></b> </a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="form-general.html">General</a>
-										</li>
-										<li>
-											<a href="form-validation.html">Validation</a>
-										</li>
-										<li>
-											<a href="form-wysiwyg.html">WYSIWYG</a>
-										</li>
-										<li>
-											<a href="form-wizard.html">Wizard &amp; File Upload</a>
-										</li>
-									</ul>
+									<%= link_to "/" do %>
+										Usuario
+									<%end %>
+
 								</li>
 							</ul><!-- /.nav -->
 						</div>
@@ -192,7 +174,7 @@
 					</div>
 				</div>
 			</div>
-	
+
 		</div>
 
 		<footer class="Footer bg-dark dker">

@@ -1,0 +1,9 @@
+.system-logo {
+	content: "";
+	display: block;
+	background: url('<%= asset_path("logo.png") %> ') repeat;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 0 6px 0 0;
+}
