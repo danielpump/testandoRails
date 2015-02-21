@@ -15,5 +15,6 @@
 //= require core.min
 //= require app.min
 //= require style-switcher.min
+//= countdown.min
 //= require_tree .
 
