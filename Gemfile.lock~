@@ -36,9 +36,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.0)
+<<<<<<< HEAD
     cowsay (0.2.0)
     daemons (1.1.9)
+=======
     commonjs (0.2.7)
+>>>>>>> d85bcf9ca5e3ebb398ccc07fb78319679d5d75cf
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.3.0)
