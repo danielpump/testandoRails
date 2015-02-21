@@ -36,9 +36,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.0)
+    commonjs (0.2.7)
     cowsay (0.2.0)
     daemons (1.1.9)
-    commonjs (0.2.7)
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.3.0)
@@ -135,12 +135,9 @@ DEPENDENCIES
   cowsay
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
+  less
   pg
   puma
-=======
-  less
->>>>>>> d85bcf9ca5e3ebb398ccc07fb78319679d5d75cf
   rails (= 4.1.4)
   rails_12factor
   sass-rails (~> 4.0.3)
