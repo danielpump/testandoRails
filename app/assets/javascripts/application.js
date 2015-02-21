@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require core.min
+//= require app.min
+//= require style-switcher.min
 //= require_tree .
-//= require bootstrap
+
