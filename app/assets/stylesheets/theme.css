@@ -16,9 +16,11 @@ body.boxed {
   background-color: #428bca;
   color: #ffffff;
 }
+/* Removido pois o menu não deve ser azul
 #menu {
   background-color: #428bca !important;
 }
+*/
 #menu > li > a {
   color: #ffffff;
   text-shadow: none !important;
