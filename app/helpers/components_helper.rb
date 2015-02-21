@@ -23,7 +23,7 @@ module ComponentsHelper
   end
 
   def form_submit_button(form)
-    (form.submit "", type: "image", class: "ok-button-icon form-btn")
+    (form.submit "", type: "image", class: "glyphicon glyphicon-ok")
   end
 
   def data_table(models, attributes = [])
@@ -70,7 +70,7 @@ module ComponentsHelper
 
   def back_button(label = 'links.voltar', path)
     (link_to path do
-      (content_tag :i, "",  :class => "back-button-icon")
+      (content_tag :i, "",  :class => "glyphicon glyphicon-arrow-left")
     end)
   end
 
@@ -80,13 +80,13 @@ module ComponentsHelper
 
   def edit_button(model, label = 'links.editar')
     (link_to send(("edit_#{model.class.name.downcase}_path"), model) do
-      (content_tag :i, "",  :class => "edit-button-icon")
+      (content_tag :i, "",  :class => "glyphicon glyphicon-edit")
     end)
   end
 
   def remove_button(model, label = 'links.apagar')
     (link_to model, method: :delete, data: { confirm: "Tem certeza que dseja exluir o registro?" } do
-      (content_tag :i, "",  :class => "delete-button-icon")
+      (content_tag :i, "",  :class => "glyphicon glyphicon-remove")
     end)
   end
 
