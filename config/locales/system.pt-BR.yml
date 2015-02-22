@@ -7,7 +7,7 @@ pt-BR:
       documento: Nº Documento
       telefone: "Telefone"
       novocliente: Novo cliente
-      perfil: "Listagem de clientes %{nome}"
+      listagem: "Listagem de clientes"
     new:
       title: Cadastro
     edit:
@@ -38,4 +38,9 @@ pt-BR:
     apagar: Apagar  
     confirmar_exclusao: Tem certeza que dseja exluir o registro?
   notice:
-    success: "%{model} foi criado com sucesso."      
+    success: "%{model} foi criado com sucesso."   
+  index:
+    quantidade_de_registro: "Mostrando de %{quantidade_inicial} a %{quantidade_final} de %{quantidade_total}"
+    mostrar: Mostrar
+    registros: Registros
+    acoes_no_registro: Ações para o registro
