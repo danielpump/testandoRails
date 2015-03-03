@@ -7,11 +7,11 @@ pt-BR:
       documento: Nº Documento
       telefone: "Telefone"
       novocliente: Novo cliente
-      listagem: "Listagem de clientes"
+      listagem: Listagem de clientes
     new:
-      title: Cadastro
+      titulo: Cadastro de Cliente
     edit:
-      title: Cadastro
+      titulo: Cadastro de Cliente
     show:
       perfil: "Perfil de informações de %{nome}"
       razaosocial: Razão social 
